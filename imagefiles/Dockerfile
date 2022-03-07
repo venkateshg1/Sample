@@ -1,5 +1,5 @@
 FROM ubuntu
 WORKDIR /app
 RUN apt-get update && sudo apt install defaulut-jre
-COPY ..
-ENTRYPOINT["Sample","index.html"]
+COPY index.html .
+ENTRYPOINT ["Sample","index.html"]
